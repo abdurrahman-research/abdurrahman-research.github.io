@@ -14,7 +14,7 @@
         nav a { font-family: 'Helvetica Neue', Arial, sans-serif; margin-right: 20px; text-decoration: none; color: #0056b3; font-weight: bold; font-size: 0.9em; text-transform: uppercase; }
         nav a:hover { text-decoration: underline; }
         
-        /* New Themes Layout CSS */
+        /* Themes Layout CSS */
         .themes-header { text-align: center; margin-bottom: 50px; font-family: 'Helvetica Neue', Arial, sans-serif; }
         .themes-header h1 { font-weight: 300; color: #6b8dbb; font-size: 2.5em; margin-bottom: 5px; }
         .themes-header h2 { font-weight: 300; color: #3a9c94; font-size: 2em; margin-top: 0; }
@@ -38,7 +38,7 @@
             font-weight: bold;
         }
 
-        /* Mini-grid for paper images inside each category */
+        /* 2x2 Mini-grid for paper images inside each category */
         .papers-grid { 
             display: grid; 
             grid-template-columns: 1fr 1fr; 
@@ -50,7 +50,7 @@
             position: relative; 
             display: block; 
             background: #f0f0f0; 
-            aspect-ratio: 1 / 1; /* Keeps images perfectly square */
+            aspect-ratio: 1 / 1; 
             text-decoration: none; 
             overflow: hidden;
         }
@@ -64,7 +64,6 @@
 
         .paper-card:hover img { transform: scale(1.05); }
 
-        /* The small white label on top of the image */
         .paper-label { 
             position: absolute; 
             bottom: 5px; 
@@ -106,14 +105,21 @@
             <div class="research-category">
                 <div class="category-title">Optical & Thermoelectric Devices</div>
                 <div class="papers-grid">
-                    <!-- Link points to the sub-page you will create later -->
                     <a href="topic-thermoelectric.html" class="paper-card">
-                        <img src="placeholder1.jpg" alt="Paper Figure">
-                        <div class="paper-label">Photodetection</div>
+                        <img src="placeholder1.jpg" alt="Scaling up BLR">
+                        <div class="paper-label">BLR Color Filters</div>
                     </a>
                     <a href="topic-thermoelectric.html" class="paper-card">
-                        <img src="placeholder2.jpg" alt="Paper Figure">
-                        <div class="paper-label">Power Transmission</div>
+                        <img src="placeholder2.jpg" alt="Sb2Te3-Bi2Te3 Detection">
+                        <div class="paper-label">Mid-IR Detection</div>
+                    </a>
+                    <a href="topic-thermoelectric.html" class="paper-card">
+                        <img src="placeholder3.jpg" alt="Plasmonic nanoresonators">
+                        <div class="paper-label">Plasmonic Resonators</div>
+                    </a>
+                    <a href="topic-thermoelectric.html" class="paper-card">
+                        <img src="placeholder4.jpg" alt="Optical Wireless Power">
+                        <div class="paper-label">Wireless Power</div>
                     </a>
                 </div>
                 <p class="category-desc">Investigating how optical resonances and material properties support light absorption and detection, including photo-thermoelectric devices for the mid-infrared.</p>
@@ -124,16 +130,20 @@
                 <div class="category-title">Structural Color & Optical Coatings</div>
                 <div class="papers-grid">
                     <a href="topic-structural-color.html" class="paper-card">
-                        <img src="placeholder3.jpg" alt="Paper Figure">
+                        <img src="placeholder5.jpg" alt="TiON Structures">
                         <div class="paper-label">TiON Structures</div>
                     </a>
                     <a href="topic-structural-color.html" class="paper-card">
-                        <img src="placeholder4.jpg" alt="Paper Figure">
-                        <div class="paper-label">Fabry-Pérot</div>
+                        <img src="placeholder6.jpg" alt="Gold Bilayer Coatings">
+                        <div class="paper-label">Gold Bilayer</div>
                     </a>
                     <a href="topic-structural-color.html" class="paper-card">
-                        <img src="placeholder5.jpg" alt="Paper Figure">
-                        <div class="paper-label">Bilayer Coatings</div>
+                        <img src="placeholder7.jpg" alt="Al Surface Cu-Si3N4">
+                        <div class="paper-label">Al Surface</div>
+                    </a>
+                    <a href="topic-structural-color.html" class="paper-card">
+                        <img src="placeholder8.jpg" alt="Fabry-Perot Cavity">
+                        <div class="paper-label">Fabry-Pérot</div>
                     </a>
                 </div>
                 <p class="category-desc">Developing optical coatings and resonant thin-film structures to control reflection, transmission, and color with an emphasis on practical fabrication.</p>
@@ -144,12 +154,20 @@
                 <div class="category-title">3D Nanoprinting & Imaging</div>
                 <div class="papers-grid">
                     <a href="topic-3d-printing.html" class="paper-card">
-                        <img src="placeholder6.jpg" alt="Paper Figure">
+                        <img src="placeholder9.jpg" alt="Color Routers">
                         <div class="paper-label">Color Routers</div>
                     </a>
                     <a href="topic-3d-printing.html" class="paper-card">
-                        <img src="placeholder7.jpg" alt="Paper Figure">
+                        <img src="placeholder10.jpg" alt="Glass Photonic Crystals">
+                        <div class="paper-label">Photonic Crystals</div>
+                    </a>
+                    <a href="topic-3d-printing.html" class="paper-card">
+                        <img src="placeholder11.jpg" alt="Meta-Microscope">
                         <div class="paper-label">Meta-Microscope</div>
+                    </a>
+                    <a href="topic-3d-printing.html" class="paper-card">
+                        <img src="placeholder12.jpg" alt="3D Shrinking">
+                        <div class="paper-label">3D Shrinking</div>
                     </a>
                 </div>
                 <p class="category-desc">Developing advanced micro- and nanofabrication processes to create complex 3D photonic crystals, color routers, and single-shot 3D imaging meta-microscopes.</p>
@@ -160,12 +178,20 @@
                 <div class="category-title">Nanomaterials & Phase-Change</div>
                 <div class="papers-grid">
                     <a href="topic-nanomaterials.html" class="paper-card">
-                        <img src="placeholder8.jpg" alt="Paper Figure">
-                        <div class="paper-label">Tunable States</div>
+                        <img src="placeholder13.jpg" alt="Quantum Wells">
+                        <div class="paper-label">Quantum Wells</div>
                     </a>
                     <a href="topic-nanomaterials.html" class="paper-card">
-                        <img src="placeholder9.jpg" alt="Paper Figure">
-                        <div class="paper-label">Quantum Wells</div>
+                        <img src="placeholder14.jpg" alt="Sb2Te3 States">
+                        <div class="paper-label">Sb2Te3 States</div>
+                    </a>
+                    <a href="topic-nanomaterials.html" class="paper-card">
+                        <img src="placeholder15.jpg" alt="TiO2 Shell">
+                        <div class="paper-label">TiO2 Shell</div>
+                    </a>
+                    <a href="topic-nanomaterials.html" class="paper-card">
+                        <img src="placeholder16.jpg" alt="Colloidal Quantum Dots">
+                        <div class="paper-label">Quantum Dots</div>
                     </a>
                 </div>
                 <p class="category-desc">Exploring tunable optical states and light-matter interactions in specialized nanoscale materials, including highly textured phase-change materials and colloidal quantum dots.</p>
@@ -176,8 +202,20 @@
                 <div class="category-title">Magnetic & Epitaxial Thin Films</div>
                 <div class="papers-grid">
                     <a href="topic-magnetic.html" class="paper-card">
-                        <img src="placeholder10.jpg" alt="Paper Figure">
-                        <div class="paper-label">Island Coalescence</div>
+                        <img src="placeholder17.jpg" alt="L10-FePt Coalescence">
+                        <div class="paper-label">L10-FePt</div>
+                    </a>
+                    <a href="topic-magnetic.html" class="paper-card">
+                        <img src="placeholder18.jpg" alt="L1-FePt Islands">
+                        <div class="paper-label">L1-FePt Islands</div>
+                    </a>
+                    <a href="topic-magnetic.html" class="paper-card">
+                        <img src="placeholder19.jpg" alt="Li-Ferrites">
+                        <div class="paper-label">Li-Ferrites</div>
+                    </a>
+                    <a href="topic-magnetic.html" class="paper-card">
+                        <img src="placeholder20.jpg" alt="Ni-Mg Ferrites">
+                        <div class="paper-label">Ni-Mg Ferrites</div>
                     </a>
                 </div>
                 <p class="category-desc">Investigating the fundamental growth and coalescence mechanisms of epitaxial L10-FePt islands on MgO for applications such as heat-assisted magnetic recording.</p>
