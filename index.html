@@ -62,17 +62,44 @@
             margin-bottom: 5px;
         }
         
-        /* New Hero Banner CSS */
+        /* Hero Banner CSS */
         .hero-banner {
             width: 100%;
             margin-bottom: 40px;
-            background-color: #f4f4f4; /* Light gray placeholder background */
+            background-color: #f4f4f4; 
         }
         .hero-banner img {
             width: 100%;
             max-height: 400px;
             object-fit: cover; 
             display: block;
+        }
+
+        /* Profile Layout CSS */
+        .intro-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .intro-text {
+            flex: 1;
+        }
+        .profile-pic {
+            width: 250px;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+
+        /* Mobile responsiveness for profile section */
+        @media (max-width: 768px) {
+            .intro-container {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .profile-pic {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -99,12 +126,17 @@
     </div>
 
     <main>
-        <section class="content-section">
-            <p>Welcome to my research website. I am a Senior Research Fellow at the Singapore University of Technology and Design (SUTD), where I oversee nanofabrication activities for Prof. Joel Yang's research group in the Engineering Product Development pillar.</p>
+        <section class="content-section intro-container">
+            <div class="intro-text">
+                <p>Welcome to my research website. I am a Senior Research Fellow at the Singapore University of Technology and Design (SUTD), where I oversee nanofabrication activities for Prof. Joel Yang's research group in the Engineering Product Development pillar.</p>
+                
+                <p>With more than 10 years of experience, my work brings together thin-film optical coatings, photonic devices, advanced metrology, and CMOS-compatible micro- and nanofabrication. I translate research concepts through optical modelling, process development, device fabrication, experimental validation, and technology transfer.</p>
+    
+                <p>My research spans structural color, multispectral filters, thermoelectric photodetectors, and single-photon-source technologies. I have authored or co-authored more than 20 peer-reviewed papers, with work appearing in <em>Nanophotonics</em>, <em>Nano Letters</em>, <em>Advanced Optical Materials</em>, <em>Nature Communications</em>, and <em>Science Advances</em>. I received my Ph.D. in Materials Science and Engineering from KAIST in 2017 and worked as a postdoctoral researcher at KIST before joining SUTD.</p>
+            </div>
             
-            <p>With more than 10 years of experience, my work brings together thin-film optical coatings, photonic devices, advanced metrology, and CMOS-compatible micro- and nanofabrication. I translate research concepts through optical modelling, process development, device fabrication, experimental validation, and technology transfer.</p>
-
-            <p>My research spans structural color, multispectral filters, thermoelectric photodetectors, and single-photon-source technologies. I have authored or co-authored more than 20 peer-reviewed papers, with work appearing in <em>Nanophotonics</em>, <em>Nano Letters</em>, <em>Advanced Optical Materials</em>, <em>Nature Communications</em>, and <em>Science Advances</em>. I received my Ph.D. in Materials Science and Engineering from KAIST in 2017 and worked as a postdoctoral researcher at KIST before joining SUTD.</p>
+            <!-- Profile Picture -->
+            <img src="Profile.jfif" alt="Md Abdur Rahman Profile" class="profile-pic">
         </section>
 
         <section class="content-section">
