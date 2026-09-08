@@ -10,7 +10,7 @@
             font-family: 'Georgia', serif; 
             line-height: 1.6;
             color: #333;
-            max-width: 950px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px 40px;
             background-color: #ffffff;
@@ -62,11 +62,11 @@
             margin-bottom: 5px;
         }
         
-        /* New Split Hero Banner CSS */
+        /* New Split Hero Banner with Image Grid */
         .hero-banner {
             display: flex;
             width: 100%;
-            min-height: 320px;
+            min-height: 350px;
             margin-bottom: 40px;
             border-radius: 6px;
             overflow: hidden;
@@ -79,51 +79,48 @@
             justify-content: center;
         }
         
-        /* Left Side: Journals */
+        /* Left Side: Journal Cover Grid */
         .banner-left {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 40px;
-            color: #fff;
+            background: #1e283b; /* Academic Dark Slate */
+            padding: 30px;
         }
         .banner-left h2 {
             color: #fff;
             margin-top: 0;
-            font-size: 1.8em;
-            margin-bottom: 25px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
             font-weight: 300;
-        }
-        .journal-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .journal-badge {
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 8px 14px;
-            border-radius: 4px;
+            text-align: center;
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.85em;
-            font-weight: bold;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
+        .journal-cover-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .journal-cover-grid img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 3 / 4; /* Keeps the images shaped like a journal/magazine */
+            object-fit: cover;
+            border-radius: 2px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+            background-color: #ddd; /* Placeholder background color */
+        }
 
-        /* Right Side: Image Placeholder */
+        /* Right Side: Main Highlight Image */
         .banner-right {
             background-color: #f4f4f4;
             position: relative;
         }
-        
-        /* Replace 'highlight-device.jpg' with your actual image filename later */
         .banner-right img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
-        
-        /* This hides the placeholder text once you add a real image */
         .banner-placeholder-text {
             position: absolute;
             top: 50%;
@@ -190,34 +187,26 @@
 
     <!-- Split Hero Banner -->
     <div class="hero-banner">
-        <!-- Left Half: Journals -->
+        <!-- Left Half: Journal Covers Grid -->
         <div class="banner-half banner-left">
-            <h2>Published In</h2>
-            <div class="journal-grid">
-                <span class="journal-badge">Nature Communications</span>
-                <span class="journal-badge">Science Advances</span>
-                <span class="journal-badge">Nano Letters</span>
-                <span class="journal-badge">Advanced Optical Materials</span>
-                <span class="journal-badge">Nanophotonics</span>
-                <span class="journal-badge">ACS Appl. Mater. Interfaces</span>
-                <span class="journal-badge">Optics Express</span>
+            <h2>Featured Journals</h2>
+            <div class="journal-cover-grid">
+                <!-- Replace these srcs with screenshots of the actual journal covers -->
+                <img src="cover-natcomms.jpg" alt="Nature Communications Cover">
+                <img src="cover-sciadv.jpg" alt="Science Advances Cover">
+                <img src="cover-nanolett.jpg" alt="Nano Letters Cover">
+                <img src="cover-advoptmat.jpg" alt="Advanced Optical Materials Cover">
+                <img src="cover-nanophotonics.jpg" alt="Nanophotonics Cover">
+                <img src="cover-acsami.jpg" alt="ACS Applied Materials & Interfaces Cover">
             </div>
         </div>
         
-        <!-- Right Half: Image -->
+        <!-- Right Half: Highlight Image -->
         <div class="banner-half banner-right">
-            <!-- 
-                INSTRUCTIONS: 
-                When you have your device/figure image ready, uncomment the <img> tag below 
-                and change 'your-device-image.jpg' to your actual file name. 
-                Then, delete the <div class="banner-placeholder-text"> completely.
-            -->
-            
-            <!-- <img src="your-device-image.jpg" alt="Highlighted Research Work"> -->
-            
+            <!-- <img src="highlighted-device.jpg" alt="Highlighted Research Work"> -->
             <div class="banner-placeholder-text">
-                <strong>Image Placeholder</strong><br>
-                Upload your figure/device image and link it here in the HTML to replace this box.
+                <strong>Highlight Image Placeholder</strong><br>
+                Upload your device/research image and link it here to replace this box.
             </div>
         </div>
     </div>
