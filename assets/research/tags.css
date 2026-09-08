@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+body { font-family: Georgia, serif; line-height: 1.6; color: #333; max-width: 1100px; margin: 0 auto; padding: 20px 40px; background: #fff; }
+header { border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 40px; }
+.site-title { font: bold 2em 'Helvetica Neue', Arial, sans-serif; color: #222; text-decoration: none; }
+.tagline { font-size: 1.1em; color: #555; margin-top: 5px; }
+nav { margin-top: 20px; }
+nav a { font-family: 'Helvetica Neue', Arial, sans-serif; margin-right: 20px; text-decoration: none; color: #0056b3; font-weight: bold; font-size: .9em; text-transform: uppercase; }
+a { color: #0056b3; text-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 3px solid #0056b3; outline-offset: 4px; }
+.themes-header { text-align: center; margin-bottom: 44px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.themes-header h1 { font-weight: 300; color: #6b8dbb; font-size: 2.5em; margin-bottom: 5px; }
+.themes-header h2 { font-weight: 300; color: #3a9c94; font-size: 2em; margin-top: 0; }
+.research-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-areas: 'devices imaging nano' 'color color magnetic'; gap: 40px 32px; align-items: start; margin-bottom: 60px; }
+.theme-devices { grid-area: devices; }.theme-imaging { grid-area: imaging; }.theme-nano { grid-area: nano; }.theme-color { grid-area: color; }.theme-magnetic { grid-area: magnetic; }
+.category-title { color: #6b8dbb; text-align: center; text-transform: uppercase; font: bold 1.05rem/1.5 'Helvetica Neue', Arial, sans-serif; letter-spacing: .7px; margin: 0 0 20px; }
+.category-title a { color: inherit; text-decoration: none; }
+.category-title a:hover { text-decoration: underline; }
+.papers-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+.theme-color .papers-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.paper-card { min-width: 0; display: flex; flex-direction: column; border: 1px solid #d8e2ef; color: #333; text-decoration: none; background: #fff; }
+.paper-card:hover { border-color: #0056b3; text-decoration: none; }
+.paper-card img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; padding: 5px; }
+.paper-text { min-height: 160px; padding: 15px 9px; display: flex; align-items: center; justify-content: center; text-align: center; font: .875rem/1.4 'Helvetica Neue', Arial, sans-serif; overflow-wrap: anywhere; }
+.paper-label { margin-top: auto; padding: 9px 5px; background: #f2f5fa; text-align: center; font: .875rem/1.4 'Helvetica Neue', Arial, sans-serif; }
+.category-desc { font-size: 1rem; color: #555; margin: 20px 0 10px; }
+.theme-link { font: .875rem/1.5 'Helvetica Neue', Arial, sans-serif; }
+.tag-main { max-width: 850px; margin: 0 auto; }
+.back-link { display: inline-block; margin: 0 0 20px; font: .9rem 'Helvetica Neue', Arial, sans-serif; }
+.tag-heading { font: 400 2rem/1.3 'Helvetica Neue', Arial, sans-serif; color: #557caf; margin: 0 0 16px; }
+.tag-intro { color: #555; }
+.tag-links { display: flex; flex-wrap: wrap; gap: 10px 20px; padding: 16px 0; border-bottom: 1px solid #ddd; margin: 0 0 35px; font: .875rem/1.5 'Helvetica Neue', Arial, sans-serif; }
+.tag-links a[aria-current] { color: #333; font-weight: bold; }
+.paper-entry { padding-bottom: 36px; margin-bottom: 36px; border-bottom: 1px solid #ddd; scroll-margin-top: 24px; }
+.paper-entry:target { border-left: 3px solid #6b8dbb; padding-left: 18px; }
+.paper-entry h2 { font: 500 1.5rem/1.4 'Helvetica Neue', Arial, sans-serif; margin: 0 0 12px; }
+.paper-entry h2 a { color: #315b89; text-decoration: none; }
+.paper-meta { color: #555; font: .875rem/1.6 'Helvetica Neue', Arial, sans-serif; }
+.paper-entry figure { margin: 22px 0; }
+.paper-entry figure img { display: block; width: auto; height: auto; max-width: 100%; max-height: 620px; margin: 0 auto; }
+.paper-entry figcaption { font: .8125rem/1.5 'Helvetica Neue', Arial, sans-serif; color: #555; margin-top: 10px; }
+.paper-entry h3 { font: 600 1rem 'Helvetica Neue', Arial, sans-serif; margin-bottom: 8px; }
+.paper-summary { margin-top: 0; }
+@media(max-width:850px) {
+  body { padding: 20px 24px; }
+  .research-grid { grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-areas: 'devices imaging' 'color color' 'nano magnetic'; gap: 32px 22px; }
+}
+@media(max-width:540px) {
+  body { padding: 20px; }
+  .site-title { font-size: 1.65em; }
+  .research-grid { display: flex; flex-direction: column; gap: 32px; }
+  .research-category { width: 100%; }
+  .theme-color .papers-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .tag-heading { font-size: 1.65rem; }
+  .paper-entry h2 { font-size: 1.25rem; }
+}
