@@ -62,17 +62,71 @@
             margin-bottom: 5px;
         }
         
-        /* Hero Banner CSS */
+        /* New Split Hero Banner CSS */
         .hero-banner {
+            display: flex;
             width: 100%;
+            min-height: 320px;
             margin-bottom: 40px;
-            background-color: #f4f4f4; 
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        .hero-banner img {
+        .banner-half {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .banner-left {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 40px;
+            color: #fff;
+        }
+        .banner-left h2 {
+            color: #fff;
+            margin-top: 0;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+        .journal-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .journal-badge {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 14px;
+            border-radius: 4px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.85em;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .banner-right {
+            background-color: #f4f4f4;
+            position: relative;
+        }
+        .banner-right img {
             width: 100%;
-            max-height: 400px;
-            object-fit: cover; 
+            height: 100%;
+            object-fit: cover;
             display: block;
+        }
+        .banner-placeholder-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #888;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            border: 2px dashed #ccc;
+            padding: 20px;
+            width: 70%;
         }
 
         /* Profile Layout CSS */
@@ -91,8 +145,14 @@
             object-fit: cover;
         }
 
-        /* Mobile responsiveness for profile section */
+        /* Mobile responsiveness */
         @media (max-width: 768px) {
+            .hero-banner {
+                flex-direction: column;
+            }
+            .banner-right {
+                min-height: 250px;
+            }
             .intro-container {
                 flex-direction: column-reverse;
                 align-items: center;
@@ -120,9 +180,30 @@
         </nav>
     </header>
 
-    <!-- Hero Banner Image -->
+    <!-- Split Hero Banner Image -->
     <div class="hero-banner">
-        <img src="banner.jpg" alt="Research Highlight Banner">
+        <!-- Left Half: Journals -->
+        <div class="banner-half banner-left">
+            <h2>Published In</h2>
+            <div class="journal-grid">
+                <span class="journal-badge">Nature Communications</span>
+                <span class="journal-badge">Science Advances</span>
+                <span class="journal-badge">Nano Letters</span>
+                <span class="journal-badge">Advanced Optical Materials</span>
+                <span class="journal-badge">Nanophotonics</span>
+                <span class="journal-badge">ACS Appl. Mater. Interfaces</span>
+                <span class="journal-badge">Optics Express</span>
+            </div>
+        </div>
+        
+        <!-- Right Half: Image -->
+        <div class="banner-half banner-right">
+            <!-- <img src="your-device-image.jpg" alt="Highlighted Research Work"> -->
+            <div class="banner-placeholder-text">
+                <strong>Image Placeholder</strong><br>
+                Upload your figure/device image and link it here in the HTML to replace this box.
+            </div>
+        </div>
     </div>
 
     <main>
