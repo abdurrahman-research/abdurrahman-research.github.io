@@ -1,87 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Abdur Rahman, PhD - Research</title>
-    <style>
-        /* Shared CSS */
-        body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px 40px; background-color: #ffffff; }
-        header { border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 40px; }
-        .site-title { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 2em; font-weight: bold; color: #222; text-decoration: none; }
-        .tagline { font-size: 1.1em; color: #555; margin-top: 5px; }
-        nav { margin-top: 20px; }
-        nav a { font-family: 'Helvetica Neue', Arial, sans-serif; margin-right: 20px; text-decoration: none; color: #0056b3; font-weight: bold; font-size: 0.9em; text-transform: uppercase; }
-        nav a:hover { text-decoration: underline; }
-        
-        /* Themes Layout CSS */
-        .themes-header { text-align: center; margin-bottom: 50px; font-family: 'Helvetica Neue', Arial, sans-serif; }
-        .themes-header h1 { font-weight: 300; color: #6b8dbb; font-size: 2.5em; margin-bottom: 5px; }
-        .themes-header h2 { font-weight: 300; color: #3a9c94; font-size: 2em; margin-top: 0; }
-
-        /* Main Grid for the 5 Topics */
-        .research-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 40px; 
-            margin-bottom: 60px;
-        }
-
-        .research-category { text-align: center; }
-        .category-title { 
-            color: #6b8dbb; 
-            text-transform: uppercase; 
-            font-size: 1.1em; 
-            letter-spacing: 1px; 
-            margin-bottom: 20px; 
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-weight: bold;
-        }
-
-        /* 2x2 Mini-grid for paper images inside each category */
-        .papers-grid { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 10px; 
-            margin-bottom: 20px; 
-        }
-
-        .paper-card { 
-            position: relative; 
-            display: block; 
-            background: #f0f0f0; 
-            aspect-ratio: 1 / 1; 
-            text-decoration: none; 
-            overflow: hidden;
-        }
-        
-        .paper-card img { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover; 
-            transition: transform 0.3s ease; 
-        }
-
-        .paper-card:hover img { transform: scale(1.05); }
-
-        .paper-label { 
-            position: absolute; 
-            bottom: 5px; 
-            right: 5px; 
-            background: rgba(255,255,255,0.95); 
-            padding: 3px 8px; 
-            font-size: 0.75em; 
-            color: #333; 
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-        
-        .category-desc { font-size: 0.95em; color: #555; text-align: left; line-height: 1.5; }
-    </style>
-    <link rel="stylesheet" href="assets/research/research.css">
-</head>
-<body>
-
-    <header>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research – Md Abdur Rahman, PhD</title>
+<link rel="stylesheet" href="assets/research/tags.css"></head>
+<body><header>
         <a href="index.html" class="site-title">Md Abdur Rahman, PhD</a>
         <div class="tagline">Materials, Nanofabrication & Photonics</div>
         <nav>
@@ -92,97 +13,24 @@
             <a href="experience.html">Experience</a>
             <a href="contact.html">Contact</a>
         </nav>
-    </header>
-
-    <main>
-        <div class="themes-header">
-            <h1>Research</h1>
-            <h2>Themes</h2>
-        </div>
-
-        <div class="research-grid">
-            
-            <!-- TOPIC 1 -->
-            <div class="research-category">
-                <div class="category-title">Optical & Thermoelectric Devices</div>
-                <div class="papers-grid">
-                    <a href="https://doi.org/10.1515/nanoph-2024-0090" class="paper-card" data-paper="1" aria-label="Read summary: Scaling up multispectral color filters with binary lithography and reflow (BLR)"><img src="assets/research/paper-01.jpg" alt="Figure 1 — Scaling up multispectral color filters with binary lithography and reflow (BLR)" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">BLR Color Filters</span></a>
-                    <a href="https://doi.org/10.1002/adom.202401450" class="paper-card" data-paper="2" aria-label="Read summary: Sb2Te3–Bi2Te3 Direct Photo–Thermoelectric Mid-Infrared Detection"><img src="assets/research/paper-02.png" alt="Figure 1 — Sb2Te3–Bi2Te3 Direct Photo–Thermoelectric Mid-Infrared Detection" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">Mid-IR Detection</span></a>
-                    <a href="https://doi.org/10.1515/nanoph-2024-0752" class="paper-card" data-paper="3" aria-label="Read summary: Interband plasmonic nanoresonators for enhanced thermoelectric photodetection"><img src="assets/research/paper-03.jpg" alt="Figure 1 — Interband plasmonic nanoresonators for enhanced thermoelectric photodetection" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">Plasmonic Resonators</span></a>
-                    <a href="https://doi.org/10.1109/JWPT.2026.3682232" class="paper-card" data-paper="4" aria-label="Read summary: Optical Wireless Power Transmission using Thermoelectric Device with Thin-Film Absorber"><img src="assets/research/paper-04.png" alt="TUAT press release Figure 1, modified from the IEEE paper — Optical Wireless Power Transmission using Thermoelectric Device with Thin-Film Absorber" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">Wireless Power</span></a>
-                </div>
-                <p class="category-desc">Investigating how optical resonances and material properties support light absorption and detection, including photo-thermoelectric devices for the mid-infrared.</p>
-            </div>
-
-            <!-- TOPIC 2 -->
-            <div class="research-category">
-                <div class="category-title">Structural Color & Optical Coatings</div>
-                <div class="papers-grid">
-                    <a href="https://doi.org/10.1002/adom.202503135" class="paper-card" data-paper="5" aria-label="Read summary: Industrial-Grade Structural Coloration with Robust and Vivid TiON-Based Structures"><span class="paper-text">Industrial-Grade Structural Coloration with Robust and Vivid TiON-Based Structures<span class="paper-text-action">Read summary</span></span><span class="paper-label">TiON Structures</span></a>
-                    <a href="https://doi.org/10.1002/adpr.202300324" class="paper-card" data-paper="6" aria-label="Read summary: Widening the Gamut of Structural Colors of Gold via Insulator–Metal Bilayer Coatings"><span class="paper-text">Widening the Gamut of Structural Colors of Gold via Insulator–Metal Bilayer Coatings<span class="paper-text-action">Read summary</span></span><span class="paper-label">Gold Bilayer</span></a>
-                    <a href="https://doi.org/10.3390/mi14020471" class="paper-card" data-paper="7" aria-label="Read summary: Structural Colors on Al Surface via Capped Cu-Si3N4 Bilayer Structure"><img src="assets/research/paper-07.jpg" alt="Figure 1 — Structural Colors on Al Surface via Capped Cu-Si3N4 Bilayer Structure" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">Al Surface</span></a>
-                    <a href="https://doi.org/10.1515/nanoph-2022-0522" class="paper-card" data-paper="8" aria-label="Read summary: To realize a variety of structural color adjustments via lossy-dielectric-based Fabry–Perot cavity structure"><img src="assets/research/paper-08.jpg" alt="Figure 1 — To realize a variety of structural color adjustments via lossy-dielectric-based Fabry–Perot cavity structure" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">Fabry-Pérot</span></a>
-                </div>
-                <p class="category-desc">Developing optical coatings and resonant thin-film structures to control reflection, transmission, and color with an emphasis on practical fabrication.</p>
-            </div>
-
-            <!-- TOPIC 3 -->
-            <div class="research-category">
-                <div class="category-title">3D Nanoprinting & Imaging</div>
-                <div class="papers-grid">
-                    <a href="https://doi.org/10.1038/s41467-026-76072-8" class="paper-card" data-paper="9" aria-label="Read summary: 3D printed designer color routers with low refractive index for low-light imaging"><img src="assets/research/paper-09.jpeg" alt="Figure 1 — 3D printed designer color routers with low refractive index for low-light imaging" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">Color Routers</span></a>
-                    <a href="https://doi.org/10.1126/sciadv.adv0267" class="paper-card" data-paper="10" aria-label="Read summary: Nanoscale 3D printing of glass photonic crystals with near-unity reflectance in the visible spectrum"><img src="assets/research/paper-10.jpg" alt="Figure 1 — Nanoscale 3D printing of glass photonic crystals with near-unity reflectance in the visible spectrum" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">Photonic Crystals</span></a>
-                    <a href="https://doi.org/10.1021/acs.nanolett.4c03952" class="paper-card" data-paper="11" aria-label="Read summary: Single-Shot 3D Imaging Meta-Microscope"><span class="paper-text">Single-Shot 3D Imaging Meta-Microscope<span class="paper-text-action">Read summary</span></span><span class="paper-label">Meta-Microscope</span></a>
-                    <a href="https://doi.org/10.1038/s41467-023-41535-9" class="paper-card" data-paper="12" aria-label="Read summary: Pick and place process for uniform shrinking of 3D printed micro- and nano-architected materials"><img src="assets/research/paper-12.jpg" alt="Figure 1 — Pick and place process for uniform shrinking of 3D printed micro- and nano-architected materials" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">3D Shrinking</span></a>
-                </div>
-                <p class="category-desc">Developing advanced micro- and nanofabrication processes to create complex 3D photonic crystals, color routers, and single-shot 3D imaging meta-microscopes.</p>
-            </div>
-
-            <!-- TOPIC 4 -->
-            <div class="research-category">
-                <div class="category-title">Nanomaterials & Phase-Change</div>
-                <div class="papers-grid">
-                    <a href="https://doi.org/10.1021/acs.nanolett.5c00015" class="paper-card" data-paper="13" aria-label="Read summary: Tunable Multiresonant Microcavity Exciton-Polaritons in Colloidal Quantum Wells"><img src="assets/research/paper-13.png" alt="Graphical abstract — Tunable Multiresonant Microcavity Exciton-Polaritons in Colloidal Quantum Wells" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">Quantum Wells</span></a>
-                    <a href="https://doi.org/10.1364/OME.564116" class="paper-card" data-paper="14" aria-label="Read summary: Continuously tunable optical states of highly textured Sb2Te3"><span class="paper-text">Continuously tunable optical states of highly textured Sb2Te3<span class="paper-text-action">Read summary</span></span><span class="paper-label">Sb2Te3 States</span></a>
-                    <a href="https://doi.org/10.1039/D4NR03566F" class="paper-card" data-paper="15" aria-label="Read summary: Controlling TiO2 photocatalytic behaviour via perhydropolysilazane-derived SiO2 ultrathin shell"><span class="paper-text">Controlling TiO2 photocatalytic behaviour via perhydropolysilazane-derived SiO2 ultrathin shell<span class="paper-text-action">Read summary</span></span><span class="paper-label">TiO2 Shell</span></a>
-                    <a href="https://doi.org/10.1039/D4NR02123A" class="paper-card" data-paper="16" aria-label="Read summary: Deterministic positioning of few aqueous colloidal quantum dots"><img src="assets/research/paper-16.png" alt="Figure 1 — Deterministic positioning of few aqueous colloidal quantum dots" loading="lazy" decoding="async" width="600" height="600"><span class="paper-label">Quantum Dots</span></a>
-                </div>
-                <p class="category-desc">Exploring tunable optical states and light-matter interactions in specialized nanoscale materials, including highly textured phase-change materials and colloidal quantum dots.</p>
-            </div>
-
-            <!-- TOPIC 5 -->
-            <div class="research-category">
-                <div class="category-title">Magnetic & Epitaxial Thin Films</div>
-                <div class="papers-grid">
-                    <a href="https://doi.org/10.1063/1.4966169" class="paper-card" data-paper="17" aria-label="Read summary: On the growth and coalescence of the epitaxial islands of L10-FePt (001) thin-film"><span class="paper-text">On the growth and coalescence of the epitaxial islands of L10-FePt (001) thin-film<span class="paper-text-action">Read summary</span></span><span class="paper-label">L10FePt Film</span></a>
-                    <a href="https://doi.org/10.1016/j.physb.2011.01.058" class="paper-card" data-paper="18" aria-label="Read summary: Effect of Li substitution on the magnetic properties of LixMg0.40Ni0.60−2xFe2+xO4 ferrites"><span class="paper-text">Effect of Li substitution on the magnetic properties of LixMg0.40Ni0.60−2xFe2+xO4 ferrites<span class="paper-text-action">Read summary</span></span><span class="paper-label">Li-Mg-Ni Ferrites</span></a>
-                </div>
-                <p class="category-desc">Investigating the fundamental growth and coalescence mechanisms of epitaxial L10-FePt islands on MgO for applications such as heat-assisted magnetic recording.</p>
-            </div>
-
-        </div>
-    </main>
-
-<dialog id="paper-dialog" class="paper-dialog" aria-labelledby="paper-title">
-  <div class="dialog-toolbar">
-    <span>Research paper</span>
-    <button id="paper-close" class="dialog-close" type="button" autofocus>Close ×</button>
-  </div>
-  <div class="dialog-content">
-    <h2 id="paper-title"></h2>
-    <p id="paper-meta" class="dialog-meta"></p>
-    <figure id="paper-figure" class="dialog-figure">
-      <img id="paper-image" alt="">
-      <figcaption id="paper-credit"></figcaption>
-    </figure>
-    <h3>Paper summary</h3>
-    <p id="paper-summary" class="dialog-summary"></p>
-    <a id="paper-source" class="dialog-paper-link" target="_blank" rel="noopener noreferrer">Read the paper</a>
-  </div>
-</dialog>
-
-<script id="research-papers" type="application/json">{"1": {"index": 1, "title": "Scaling up multispectral color filters with binary lithography and reflow (BLR)", "doi": "10.1515/nanoph-2024-0090", "year": 2024, "source_url": "https://doi.org/10.1515/nanoph-2024-0090", "figure": "Figure 1", "credit": "Rahman et al., Nanophotonics (2024), Figure 1", "license": "", "summary": "Binary lithography followed by polymer reflow creates at least 16 Fabry–Perot transmission filters in a single patterning step, offering approximately 15 nm control of dielectric thickness.", "journal": "Nanophotonics", "image": "assets/research/paper-01.jpg", "image_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11465983/"}, "2": {"index": 2, "title": "Sb2Te3–Bi2Te3 Direct Photo–Thermoelectric Mid-Infrared Detection", "doi": "10.1002/adom.202401450", "year": 2024, "source_url": "https://doi.org/10.1002/adom.202401450", "figure": "Figure 1", "credit": "Wredh et al., Advanced Optical Materials (2024), Figure 1; publisher PDF via University of Birmingham", "license": "Creative Commons Attribution (CC BY), as stated in repository PDF", "summary": "A resonant Sb2Te3–Bi2Te3 junction directly absorbs mid-infrared light and converts heating to an electrical signal. Devices operating at 3.6 μm achieved 10.2 V/W responsivity and bandwidth around 1 kHz.", "journal": "Advanced Optical Materials", "image": "assets/research/paper-02.png", "image_source_url": "https://doi.org/10.1002/adom.202401450"}, "3": {"index": 3, "title": "Interband plasmonic nanoresonators for enhanced thermoelectric photodetection", "doi": "10.1515/nanoph-2024-0752", "year": 2025, "source_url": "https://doi.org/10.1515/nanoph-2024-0752", "figure": "Figure 1", "credit": "Original authors, Nanophotonics (2025), Figure 1", "license": "", "summary": "Nanoresonators patterned directly into Sb2Te3 and Bi2Te3 combine interband plasmonic absorption with thermoelectric conversion. The detector reaches approximately 90% visible absorption and a 160 μs response time.", "journal": "Nanophotonics", "image": "assets/research/paper-03.jpg", "image_source_url": "https://doi.org/10.1515/nanoph-2024-0752"}, "4": {"index": 4, "title": "Optical Wireless Power Transmission using Thermoelectric Device with Thin-Film Absorber", "doi": "10.1109/JWPT.2026.3682232", "year": 2026, "source_url": "https://doi.org/10.1109/JWPT.2026.3682232", "figure": "TUAT press release Figure 1, modified from the IEEE paper", "credit": "Tokyo University of Agriculture and Technology; adapted from Tamehiro et al., IEEE Journal on Wireless Power Technologies (2026), Figure 1", "license": "", "summary": "An interference-based thin-film absorber converts laser light into heat for thermoelectric wireless power reception. A 450 nm, 1 W laser produced 2.0 mW electrical output; thermal spreading lets unilluminated elements also contribute.", "journal": "IEEE Journal on Wireless Power Technologies", "image": "assets/research/paper-04.png", "image_source_url": "https://www.tuat.ac.jp/english/outline/disclosure/pressrelease/2026/20260512_01.html"}, "5": {"index": 5, "title": "Industrial-Grade Structural Coloration with Robust and Vivid TiON-Based Structures", "doi": "10.1002/adom.202503135", "year": 2026, "source_url": "https://doi.org/10.1002/adom.202503135", "figure": null, "credit": "Rahman et al., Advanced Optical Materials (2026); abstract via SUTD repository", "license": "", "summary": "TiON/Si3N4/metal Fabry–Perot coatings replace the vulnerable top metal with a hard, corrosion-resistant lossy dielectric. Aging, humidity, and abrasion testing demonstrate durable vivid coloration with absorption above 90%.", "journal": "Advanced Optical Materials", "image": "", "image_source_url": "https://repository.sutd.edu.sg/esploro/outputs/journalArticle/Industrial-Grade-Structural-Coloration-with-Robust-and/9911274009846"}, "6": {"index": 6, "title": "Widening the Gamut of Structural Colors of Gold via Insulator–Metal Bilayer Coatings", "doi": "10.1002/adpr.202300324", "year": 2024, "source_url": "https://doi.org/10.1002/adpr.202300324", "figure": null, "credit": "Rahman et al., Advanced Photonics Research (2024); abstract via SUTD repository", "license": "", "summary": "A lithography-free coating approach tunes gold surface colors through TiO2 thickness. Adding a 50–100 nm AuAl2 underlayer widens the available color gamut through thin-film interference.", "journal": "Advanced Photonics Research", "image": "", "image_source_url": "https://repository.sutd.edu.sg/esploro/outputs/journalArticle/Widening-the-Gamut-of-Structural-Colors/9911274709846"}, "7": {"index": 7, "title": "Structural Colors on Al Surface via Capped Cu-Si3N4 Bilayer Structure", "doi": "10.3390/mi14020471", "year": 2023, "journal": "Micromachines", "source_url": "https://doi.org/10.3390/mi14020471", "figure": "Figure 1", "credit": "Rahman et al.", "license": "CC BY 4.0", "summary": "This work produces tunable reflection colors on aluminum using copper and silicon nitride thin films. Changing the metal or dielectric thickness adjusts the color through thin-film interference. Protective coatings are evaluated to reduce oxidation, humidity damage and corrosion while preserving appearance. The results show how optical design and practical surface protection can be combined for durable decorative metal coatings.", "image": "assets/research/paper-07.jpg", "image_source_url": "https://doi.org/10.3390/mi14020471"}, "8": {"index": 8, "title": "To realize a variety of structural color adjustments via lossy-dielectric-based Fabry–Perot cavity structure", "doi": "10.1515/nanoph-2022-0522", "year": 2022, "journal": "Nanophotonics", "source_url": "https://doi.org/10.1515/nanoph-2022-0522", "figure": "Figure 1", "credit": "Rahman et al.", "license": "", "summary": "This study replaces the exposed top metal in a Fabry–Pérot color coating with a lossy chromium oxynitride dielectric. Modeling and experiments show that the resulting CrON/silicon-nitride/metal stacks generate vivid colors through interference and absorption. The design also supports strong light absorption with comparatively thick top layers, offering a planar approach to color control that addresses the vulnerability of exposed metallic surfaces.", "image": "assets/research/paper-08.jpg", "image_source_url": "https://doi.org/10.1515/nanoph-2022-0522"}, "9": {"index": 9, "title": "3D printed designer color routers with low refractive index for low-light imaging", "doi": "10.1038/s41467-026-76072-8", "year": 2026, "journal": "Nature Communications", "source_url": "https://doi.org/10.1038/s41467-026-76072-8", "figure": "Figure 1", "credit": "Pan et al.", "license": "CC BY-NC-ND 4.0", "summary": "Inverse-designed, three-dimensional color routers direct different wavelengths toward corresponding detector pixels instead of discarding light through conventional color filtering. The structures are printed by two-photon polymerization in a low-index resin. The study reports approximately 70% experimental transmission across the visible spectrum and demonstrates improved color fidelity with shorter exposures on a monochrome sensor, showing potential for more efficient low-light imaging.", "image": "assets/research/paper-09.jpeg", "image_source_url": "https://doi.org/10.1038/s41467-026-76072-8"}, "10": {"index": 10, "title": "Nanoscale 3D printing of glass photonic crystals with near-unity reflectance in the visible spectrum", "doi": "10.1126/sciadv.adv0267", "year": 2025, "journal": "Science Advances", "source_url": "https://doi.org/10.1126/sciadv.adv0267", "figure": "Figure 1", "credit": "Zhang et al.", "license": "CC BY-NC 4.0", "summary": "A silicon-containing hybrid resin enables three-dimensional printing of glass photonic crystals with nanoscale features. Two-photon lithography forms the initial structures, and heat treatment removes organic components to create silica glass. The resulting crystals reach periodicities as small as 260 nanometers and nearly complete reflection at selected visible wavelengths. Electron microscopy and optical modeling support the structural quality and measured photonic response.", "image": "assets/research/paper-10.jpg", "image_source_url": "https://doi.org/10.1126/sciadv.adv0267"}, "11": {"index": 11, "title": "Single-Shot 3D Imaging Meta-Microscope", "doi": "10.1021/acs.nanolett.4c03952", "year": 2024, "journal": "Nano Letters", "source_url": "https://doi.org/10.1021/acs.nanolett.4c03952", "figure": "", "credit": "Hao et al.", "license": "", "summary": "An all-dielectric metasurface creates a double-helix point-spread function that encodes depth in a single image. The work integrates this approach into two microscope configurations with different localization ranges and numerical apertures. Experiments demonstrate three-dimensional imaging of mouse kidney tissue and peach anther. This provides a compact route to depth-resolved microscopy without the scanning arrangements commonly used in conventional systems.", "image": "", "image_source_url": "https://doi.org/10.1021/acs.nanolett.4c03952"}, "12": {"index": 12, "title": "Pick and place process for uniform shrinking of 3D printed micro- and nano-architected materials", "doi": "10.1038/s41467-023-41535-9", "year": 2023, "journal": "Nature Communications", "source_url": "https://doi.org/10.1038/s41467-023-41535-9", "figure": "Figure 1", "credit": "Mori et al.", "license": "CC BY 4.0", "summary": "A poly(vinyl alcohol)-assisted pick-and-place process releases printed three-dimensional microstructures from their original substrate before heat treatment. This reduces substrate pinning and enables more uniform shrinkage of different shapes and sizes without sacrificial supports. The work also demonstrates visible structural colors from shrunken woodpile photonic crystals, establishing a practical route to finer features in printed optical and mechanical structures.", "image": "assets/research/paper-12.jpg", "image_source_url": "https://doi.org/10.1038/s41467-023-41535-9"}, "13": {"index": 13, "title": "Tunable Multiresonant Microcavity Exciton-Polaritons in Colloidal Quantum Wells", "doi": "10.1021/acs.nanolett.5c00015", "year": 2025, "source_url": "https://doi.org/10.1021/acs.nanolett.5c00015", "figure": "Graphical abstract", "credit": "Cam et al., Nano Letters (2025)", "license": "", "summary": "A multiresonant microcavity array provides sub-5 nm cavity-length control, enabling room-temperature exciton-polaritons and tunable light–matter mixing in colloidal quantum wells.", "journal": "Nano Letters", "image": "assets/research/paper-13.png", "image_source_url": "https://ds.bilkent.edu.tr/wp-content/uploads/2025/06/NanoLett1_2025_HVD.pdf"}, "14": {"index": 14, "title": "Continuously tunable optical states of highly textured Sb2Te3", "doi": "10.1364/OME.564116", "year": 2025, "source_url": "https://doi.org/10.1364/OME.564116", "figure": null, "credit": "Adanan et al., Optical Materials Express (2025)", "license": "CC BY; listed by University of Birmingham repository", "summary": "Gradual disordering of textured Sb2Te3 tunes its optical response between metallic-like and dielectric states. Resonant films and simulated reflectors demonstrate a route toward continuously adjustable reflective color.", "journal": "Optical Materials Express", "image": "", "image_source_url": "https://research.birmingham.ac.uk/en/publications/continuously-tunable-optical-states-of-highly-textured-sbsub2subt/"}, "15": {"index": 15, "title": "Controlling TiO2 photocatalytic behaviour via perhydropolysilazane-derived SiO2 ultrathin shell", "doi": "10.1039/D4NR03566F", "year": 2024, "source_url": "https://doi.org/10.1039/D4NR03566F", "figure": null, "credit": "Burak et al., Nanoscale (2024)", "license": "CC BY 3.0", "summary": "A self-limiting PHPS-derived silica shell suppresses TiO2 photocatalytic activity while preserving whiteness and high refractive index, supporting pigment and optical-coating applications.", "journal": "Nanoscale", "image": "", "image_source_url": "https://pubs.rsc.org/en/content/articlelanding/2024/nr/d4nr03566f"}, "16": {"index": 16, "title": "Deterministic positioning of few aqueous colloidal quantum dots", "doi": "10.1039/D4NR02123A", "year": 2024, "source_url": "https://doi.org/10.1039/D4NR02123A", "figure": "Figure 1", "credit": "Pambudi et al., Nanoscale (2024)", "license": "", "summary": "Silica-coated quantum dots are assembled on lithographically patterned PMMA using ethanol-vapor-assisted drop casting and lift-off, enabling large-area placement of a few or single particles.", "journal": "Nanoscale", "image": "assets/research/paper-16.png", "image_source_url": "https://doi.org/10.1039/D4NR02123A"}, "17": {"index": 17, "title": "On the growth and coalescence of the epitaxial islands of L10-FePt (001) thin-film", "doi": "10.1063/1.4966169", "year": 2016, "source_url": "https://doi.org/10.1063/1.4966169", "figure": null, "credit": "Rahman and Park, Journal of Applied Physics (2016)", "license": "", "summary": "High-resolution transmission electron microscopy reveals how epitaxial FePt islands grow into networks and eventually coalesce. The study identifies crack-closure and groove-filling mechanisms, and examines defects at the boundaries formed as islands merge. Coercivity and the magnetic nucleation field decrease as coalescence progresses, linking thin-film growth and interface structure to magnetic behavior.", "journal": "Journal of Applied Physics", "image": "", "image_source_url": "https://doi.org/10.1063/1.4966169"}, "18": {"index": 18, "title": "Effect of Li substitution on the magnetic properties of LixMg0.40Ni0.60−2xFe2+xO4 ferrites", "doi": "10.1016/j.physb.2011.01.058", "year": 2011, "source_url": "https://doi.org/10.1016/j.physb.2011.01.058", "figure": "Figure 1: X-ray diffraction patterns", "credit": "Hossain et al., Physica B (2011)", "license": "", "summary": "Lithium substitution changes the structure and magnetic response of spinel ferrites. Lattice constants and grain size increase with lithium content, while initial permeability depends on composition and sintering temperature.", "journal": "Physica B: Condensed Matter", "image": "", "image_source_url": "https://doi.org/10.1016/j.physb.2011.01.058"}}</script>
-<script src="assets/research/research.js" defer></script>
-</body>
-</html>
-
+    </header><main><div class="themes-header"><h1>Research</h1><h2>Themes</h2></div><div class="research-grid"><section class="research-category theme-devices">
+<h2 class="category-title"><a href="tag/optical-thermoelectric-devices/">Optical & Thermoelectric Devices</a></h2>
+<div class="papers-grid"><a class="paper-card" href="tag/optical-thermoelectric-devices/#paper-1" aria-label="Read about Scaling up multispectral color filters with binary lithography and reflow (BLR)"><img src="assets/research/paper-01.jpg" alt="Figure 1: Scaling up multispectral color filters with binary lithography and reflow (BLR)" loading="lazy" width="600" height="600"><span class="paper-label">BLR Color Filters</span></a><a class="paper-card" href="tag/optical-thermoelectric-devices/#paper-2" aria-label="Read about Sb2Te3–Bi2Te3 Direct Photo–Thermoelectric Mid-Infrared Detection"><img src="assets/research/paper-02.png" alt="Figure 1: Sb2Te3–Bi2Te3 Direct Photo–Thermoelectric Mid-Infrared Detection" loading="lazy" width="600" height="600"><span class="paper-label">Mid-IR Detection</span></a><a class="paper-card" href="tag/optical-thermoelectric-devices/#paper-3" aria-label="Read about Interband plasmonic nanoresonators for enhanced thermoelectric photodetection"><img src="assets/research/paper-03.jpg" alt="Figure 1: Interband plasmonic nanoresonators for enhanced thermoelectric photodetection" loading="lazy" width="600" height="600"><span class="paper-label">Plasmonic Resonators</span></a><a class="paper-card" href="tag/optical-thermoelectric-devices/#paper-4" aria-label="Read about Optical Wireless Power Transmission using Thermoelectric Device with Thin-Film Absorber"><img src="assets/research/paper-04.png" alt="TUAT press release Figure 1, modified from the IEEE paper: Optical Wireless Power Transmission using Thermoelectric Device with Thin-Film Absorber" loading="lazy" width="600" height="600"><span class="paper-label">Wireless Power</span></a></div>
+<p class="category-desc">Investigating how optical resonances and material properties support light absorption and detection, including photo-thermoelectric devices for the mid-infrared.</p>
+<a class="theme-link" href="tag/optical-thermoelectric-devices/">View all 4 papers</a></section><section class="research-category theme-imaging">
+<h2 class="category-title"><a href="tag/3d-nanoprinting-imaging/">3D Nanoprinting & Imaging</a></h2>
+<div class="papers-grid"><a class="paper-card" href="tag/3d-nanoprinting-imaging/#paper-9" aria-label="Read about 3D printed designer color routers with low refractive index for low-light imaging"><img src="assets/research/paper-09.jpeg" alt="Figure 1: 3D printed designer color routers with low refractive index for low-light imaging" loading="lazy" width="600" height="600"><span class="paper-label">Color Routers</span></a><a class="paper-card" href="tag/3d-nanoprinting-imaging/#paper-10" aria-label="Read about Nanoscale 3D printing of glass photonic crystals with near-unity reflectance in the visible spectrum"><img src="assets/research/paper-10.jpg" alt="Figure 1: Nanoscale 3D printing of glass photonic crystals with near-unity reflectance in the visible spectrum" loading="lazy" width="600" height="600"><span class="paper-label">Photonic Crystals</span></a><a class="paper-card" href="tag/3d-nanoprinting-imaging/#paper-11" aria-label="Read about Single-Shot 3D Imaging Meta-Microscope"><span class="paper-text">Single-Shot 3D Imaging Meta-Microscope</span><span class="paper-label">Meta-Microscope</span></a><a class="paper-card" href="tag/3d-nanoprinting-imaging/#paper-12" aria-label="Read about Pick and place process for uniform shrinking of 3D printed micro- and nano-architected materials"><img src="assets/research/paper-12.jpg" alt="Figure 1: Pick and place process for uniform shrinking of 3D printed micro- and nano-architected materials" loading="lazy" width="600" height="600"><span class="paper-label">3D Shrinking</span></a></div>
+<p class="category-desc">Developing advanced micro- and nanofabrication processes to create complex 3D photonic crystals, color routers, and single-shot 3D imaging meta-microscopes.</p>
+<a class="theme-link" href="tag/3d-nanoprinting-imaging/">View all 4 papers</a></section><section class="research-category theme-nano">
+<h2 class="category-title"><a href="tag/nanomaterials-phase-change/">Nanomaterials & Phase-Change</a></h2>
+<div class="papers-grid"><a class="paper-card" href="tag/nanomaterials-phase-change/#paper-13" aria-label="Read about Tunable Multiresonant Microcavity Exciton-Polaritons in Colloidal Quantum Wells"><img src="assets/research/paper-13.png" alt="Graphical abstract: Tunable Multiresonant Microcavity Exciton-Polaritons in Colloidal Quantum Wells" loading="lazy" width="600" height="600"><span class="paper-label">Quantum Wells</span></a><a class="paper-card" href="tag/nanomaterials-phase-change/#paper-14" aria-label="Read about Continuously tunable optical states of highly textured Sb2Te3"><span class="paper-text">Continuously tunable optical states of highly textured Sb2Te3</span><span class="paper-label">Sb2Te3 States</span></a><a class="paper-card" href="tag/nanomaterials-phase-change/#paper-15" aria-label="Read about Controlling TiO2 photocatalytic behaviour via perhydropolysilazane-derived SiO2 ultrathin shell"><span class="paper-text">Controlling TiO2 photocatalytic behaviour via perhydropolysilazane-derived SiO2 ultrathin shell</span><span class="paper-label">TiO2 Shell</span></a><a class="paper-card" href="tag/nanomaterials-phase-change/#paper-16" aria-label="Read about Deterministic positioning of few aqueous colloidal quantum dots"><img src="assets/research/paper-16.png" alt="Figure 1: Deterministic positioning of few aqueous colloidal quantum dots" loading="lazy" width="600" height="600"><span class="paper-label">Quantum Dots</span></a></div>
+<p class="category-desc">Exploring tunable optical states and light-matter interactions in specialized nanoscale materials, including highly textured phase-change materials and colloidal quantum dots.</p>
+<a class="theme-link" href="tag/nanomaterials-phase-change/">View all 4 papers</a></section><section class="research-category theme-color">
+<h2 class="category-title"><a href="tag/structural-color-optical-coatings/">Structural Color & Optical Coatings</a></h2>
+<div class="papers-grid"><a class="paper-card" href="tag/structural-color-optical-coatings/#paper-5" aria-label="Read about Industrial-Grade Structural Coloration with Robust and Vivid TiON-Based Structures"><span class="paper-text">Industrial-Grade Structural Coloration with Robust and Vivid TiON-Based Structures</span><span class="paper-label">TiON Structures</span></a><a class="paper-card" href="tag/structural-color-optical-coatings/#paper-6" aria-label="Read about Widening the Gamut of Structural Colors of Gold via Insulator–Metal Bilayer Coatings"><span class="paper-text">Widening the Gamut of Structural Colors of Gold via Insulator–Metal Bilayer Coatings</span><span class="paper-label">Gold Bilayer</span></a><a class="paper-card" href="tag/structural-color-optical-coatings/#paper-19" aria-label="Read about In Situ Metal Deposition on Perhydropolysilazane-Derived Silica for Structural Color Surfaces with Antiviral Activity"><span class="paper-text">In Situ Metal Deposition on Perhydropolysilazane-Derived Silica for Structural Color Surfaces with Antiviral Activity</span><span class="paper-label">Antiviral Color Surfaces</span></a><a class="paper-card" href="tag/structural-color-optical-coatings/#paper-20" aria-label="Read about Realization of Structural Colors via Capped Cu-based F–P Cavity Structure"><span class="paper-text">Realization of Structural Colors via Capped Cu-based F–P Cavity Structure</span><span class="paper-label">Cu-Based Cavities</span></a><a class="paper-card" href="tag/structural-color-optical-coatings/#paper-7" aria-label="Read about Structural Colors on Al Surface via Capped Cu-Si3N4 Bilayer Structure"><img src="assets/research/paper-07.jpg" alt="Figure 1: Structural Colors on Al Surface via Capped Cu-Si3N4 Bilayer Structure" loading="lazy" width="600" height="600"><span class="paper-label">Al Surface</span></a><a class="paper-card" href="tag/structural-color-optical-coatings/#paper-8" aria-label="Read about To realize a variety of structural color adjustments via lossy-dielectric-based Fabry–Perot cavity structure"><img src="assets/research/paper-08.jpg" alt="Figure 1: To realize a variety of structural color adjustments via lossy-dielectric-based Fabry–Perot cavity structure" loading="lazy" width="600" height="600"><span class="paper-label">Fabry–Pérot</span></a><a class="paper-card" href="tag/structural-color-optical-coatings/#paper-21" aria-label="Read about Reflection color tuning of a metal–insulator–metal cavity structure using arc plasma deposition of gold nanoparticles"><span class="paper-text">Reflection color tuning of a metal–insulator–metal cavity structure using arc plasma deposition of gold nanoparticles</span><span class="paper-label">Au Nanoparticle Cavities</span></a><a class="paper-card" href="tag/structural-color-optical-coatings/#paper-22" aria-label="Read about Polarizonic-interference colouration of stainless steel surfaces by Au-Al₂O₃ nanocomposite thin film coating"><span class="paper-text">Polarizonic-interference colouration of stainless steel surfaces by Au-Al₂O₃ nanocomposite thin film coating</span><span class="paper-label">Al2O3–Au Coatings</span></a></div>
+<p class="category-desc">Developing optical coatings and resonant thin-film structures to control reflection, transmission, and color with an emphasis on practical fabrication.</p>
+<a class="theme-link" href="tag/structural-color-optical-coatings/">View all 8 papers</a></section><section class="research-category theme-magnetic">
+<h2 class="category-title"><a href="tag/magnetic-epitaxial-thin-films/">Magnetic & Epitaxial Thin Films</a></h2>
+<div class="papers-grid"><a class="paper-card" href="tag/magnetic-epitaxial-thin-films/#paper-17" aria-label="Read about On the growth and coalescence of the epitaxial islands of L10-FePt (001) thin-film"><span class="paper-text">On the growth and coalescence of the epitaxial islands of L10-FePt (001) thin-film</span><span class="paper-label">L10-FePt Film</span></a><a class="paper-card" href="tag/magnetic-epitaxial-thin-films/#paper-18" aria-label="Read about Effect of Li substitution on the magnetic properties of LixMg0.40Ni0.60−2xFe2+xO4 ferrites"><span class="paper-text">Effect of Li substitution on the magnetic properties of LixMg0.40Ni0.60−2xFe2+xO4 ferrites</span><span class="paper-label">Li–Mg–Ni Ferrites</span></a></div>
+<p class="category-desc">Investigating the fundamental growth and coalescence mechanisms of epitaxial L10-FePt islands on MgO for applications such as heat-assisted magnetic recording.</p>
+<a class="theme-link" href="tag/magnetic-epitaxial-thin-films/">View all 2 papers</a></section></div></main></body></html>
