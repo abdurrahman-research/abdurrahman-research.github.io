@@ -10,7 +10,7 @@
             font-family: 'Georgia', serif; 
             line-height: 1.6;
             color: #333;
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
             padding: 20px 40px;
             background-color: #ffffff;
@@ -78,6 +78,8 @@
             flex-direction: column;
             justify-content: center;
         }
+        
+        /* Left Side: Journals */
         .banner-left {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             padding: 40px;
@@ -106,16 +108,22 @@
             letter-spacing: 0.5px;
             text-transform: uppercase;
         }
+
+        /* Right Side: Image Placeholder */
         .banner-right {
             background-color: #f4f4f4;
             position: relative;
         }
+        
+        /* Replace 'highlight-device.jpg' with your actual image filename later */
         .banner-right img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
+        
+        /* This hides the placeholder text once you add a real image */
         .banner-placeholder-text {
             position: absolute;
             top: 50%;
@@ -180,7 +188,7 @@
         </nav>
     </header>
 
-    <!-- Split Hero Banner Image -->
+    <!-- Split Hero Banner -->
     <div class="hero-banner">
         <!-- Left Half: Journals -->
         <div class="banner-half banner-left">
@@ -198,7 +206,15 @@
         
         <!-- Right Half: Image -->
         <div class="banner-half banner-right">
+            <!-- 
+                INSTRUCTIONS: 
+                When you have your device/figure image ready, uncomment the <img> tag below 
+                and change 'your-device-image.jpg' to your actual file name. 
+                Then, delete the <div class="banner-placeholder-text"> completely.
+            -->
+            
             <!-- <img src="your-device-image.jpg" alt="Highlighted Research Work"> -->
+            
             <div class="banner-placeholder-text">
                 <strong>Image Placeholder</strong><br>
                 Upload your figure/device image and link it here in the HTML to replace this box.
