@@ -66,7 +66,7 @@
         .keyword-list a:hover { text-decoration: underline; text-underline-offset: 3px; }
         .keyword-list a:focus-visible { outline: 2px solid #0056b3; outline-offset: 3px; }
         
-        /* New Split Hero Banner CSS */
+        /* Split Hero Banner CSS */
         .hero-banner {
             display: flex;
             width: 100%;
@@ -84,41 +84,94 @@
         }
         .banner-left {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 40px;
+            padding: 30px;
             color: #fff;
         }
         .banner-left h2 {
             color: #fff;
             margin-top: 0;
-            font-size: 1.8em;
-            margin-bottom: 25px;
+            font-size: 1.6em;
+            margin-bottom: 20px;
             font-weight: 300;
         }
-        .journal-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
+        
+        /* Logo Grid inside Left Banner */
+        .journal-logo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            align-items: center;
         }
-        .journal-badge {
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 8px 14px;
+        .logo-box {
+            background-color: #ffffff;
             border-radius: 4px;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.85em;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
+            padding: 6px 10px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        .logo-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .text-logo-box {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: none;
+            color: #fff;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        
+        /* Right Banner Pane (Ready for Highlight Research Image) */
         .banner-right {
-            background-color: #f4f4f4;
+            background-color: #f4f5f7;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
         .banner-right img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
+            border-radius: 0 6px 6px 0;
+        }
+        .banner-placeholder-box {
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .placeholder-title {
+            font-weight: 600;
+            color: #475569;
+            font-size: 15px;
+            margin-bottom: 8px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        .placeholder-desc {
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.4;
+            max-width: 260px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
         }
 
         /* Profile Layout CSS */
@@ -174,23 +227,34 @@
 
     <!-- Split Hero Banner Image -->
     <div class="hero-banner">
-        <!-- Left Half: Journals -->
+        <!-- Left Half: Journal Logos Grid -->
         <div class="banner-half banner-left">
             <h2>Published In</h2>
-            <div class="journal-grid">
-                <span class="journal-badge">Nature Communications</span>
-                <span class="journal-badge">Science Advances</span>
-                <span class="journal-badge">Nano Letters</span>
-                <span class="journal-badge">Advanced Optical Materials</span>
-                <span class="journal-badge">Nanophotonics</span>
-                <span class="journal-badge">ACS Appl. Mater. Interfaces</span>
-                <span class="journal-badge">Optics Express</span>
+            <div class="journal-logo-grid">
+                <div class="logo-box"><img src="assets/logo/Nature-communications.avif" alt="Nature Communications"></div>
+                <div class="logo-box"><img src="assets/logo/Science Advances.png" alt="Science Advances"></div>
+                <div class="logo-box"><img src="assets/logo/Nanoletters.png" alt="Nano Letters"></div>
+                <div class="logo-box"><img src="assets/logo/Advanced-Optical-Materials-logo.jpg" alt="Advanced Optical Materials"></div>
+                <div class="logo-box text-logo-box">NANOPHOTONICS</div>
+                <div class="logo-box"><img src="assets/logo/acs-applied-materials-interfaces-.png" alt="ACS Appl. Mater. Interfaces"></div>
+                <div class="logo-box"><img src="assets/logo/Optics Express.jpg" alt="Optics Express"></div>
             </div>
         </div>
         
-        <!-- Right Half: Image -->
+        <!-- Right Half: Research Highlight Image Pane -->
         <div class="banner-half banner-right">
-            <img src="assets/your-research-highlight.jpg" alt="Highlighted Research Work">
+            <!-- 
+              INSTRUCTION TO UPLOAD YOUR HIGHLIGHT RESEARCH IMAGE LATER:
+              When you are ready, delete the entire <div class="banner-placeholder-box">...</div> block below 
+              and uncomment (remove the <!-- --> tags around) the <img> tag underneath it.
+            -->
+            <div class="banner-placeholder-box">
+                <p class="placeholder-title">Image Placeholder</p>
+                <p class="placeholder-desc">Upload your figure/device image to your assets folder and link it here in the HTML to replace this box.</p>
+            </div>
+            
+            <!-- Uncomment this line once your research image is uploaded to assets/ -->
+            <!-- <img src="assets/your-research-highlight.jpg" alt="Highlighted Research Work"> -->
         </div>
     </div>
 
